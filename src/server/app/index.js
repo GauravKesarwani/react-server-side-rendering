@@ -4,7 +4,17 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>hello world!!</h1>
+        <header>
+        	<h1>Todo Application</h1>
+        	<form action="/todos" method="post">
+        		<input name="todo" type="text"/>
+        		<input type="submit" value="Add Todo" />
+        	</form>
+        </header>
+        <section>
+        </section>
+        <footer>
+        </footer>
       </div>
     );
   }
