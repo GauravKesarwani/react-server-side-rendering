@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./src/server/server.js",
+  entry: "./src/server.js",
   output: {
     path: `${__dirname}/dist`,
     filename: "server.js"
@@ -8,9 +8,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+          presets: ["es2015"]
+        }
       }
     ]
   }
