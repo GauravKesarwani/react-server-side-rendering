@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.16.1",
-    "hapi": "^16.1.0",
+    "hapi": "^17.0.0",
     "node-fetch": "^1.6.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
