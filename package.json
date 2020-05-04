@@ -7,7 +7,9 @@
     "clean": "rm -rf dist && mkdir dist",
     "start": "cd dist && node server",
     "build": "webpack --config webpack.config.js -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "react",
@@ -26,7 +28,8 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -40,5 +43,6 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0",
     "webpack-node-externals": "^1.5.4"
-  }
+  },
+  "snyk": true
 }
